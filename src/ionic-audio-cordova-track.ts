@@ -229,7 +229,8 @@ export class CordovaAudioTrack implements IAudioTrack {
  * @method stop
  */
   stop() {
-    this.audio.stop();  // calls Media onSuccess callback
+    this.audio.release();
+    //this.audio.stop();  // calls Media onSuccess callback
   }
 
   /**
